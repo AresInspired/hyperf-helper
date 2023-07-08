@@ -37,6 +37,11 @@ if (! function_exists('logger')) {
 }
 
 if (! function_exists('stdoutLogger')) {
+    /**
+     * StdoutLogger.
+     *
+     * @return \Hyperf\Contract\StdoutLoggerInterface
+     */
     function stdoutLogger()
     {
         return \Hyperf\Support\make(\Hyperf\Contract\StdoutLoggerInterface::class);
