@@ -169,8 +169,8 @@ if (! function_exists('throw_if')) {
      * @param string|\Throwable $exception 指定异常信息(RuntimeException)|抛出异常
      * @param mixed ...$parameters 异常自定义参数
      *
-     * @throws \Throwable
      * @return mixed 返回条件数据
+     * @throws \Throwable
      */
     function throw_if(mixed $condition, Throwable|string $exception = 'RuntimeException', ...$parameters): mixed
     {
@@ -194,8 +194,8 @@ if (! function_exists('throw_unless')) {
      * @param string|\Throwable $exception 指定异常信息(RuntimeException)|抛出异常
      * @param mixed ...$parameters 异常自定义参数
      *
-     * @throws \Throwable
      * @return mixed 返回条件数据
+     * @throws \Throwable
      */
     function throw_unless(mixed $condition, Throwable|string $exception = 'RuntimeException', ...$parameters): mixed
     {
@@ -227,8 +227,8 @@ if (! function_exists('annotation_collector')) {
      * @param string $method 查询方法
      * @param string $annotationTarget 指定注解类
      *
-     * @throws \Hyperf\Di\Exception\AnnotationException
      * @return \Hyperf\Di\Annotation\AbstractAnnotation
+     * @throws \Hyperf\Di\Exception\AnnotationException
      */
     function annotation_collector(string $class, string $method, string $annotationTarget): Hyperf\Di\Annotation\AbstractAnnotation
     {
